@@ -1,6 +1,29 @@
 # CarND-Controls-PID
 Self-Driving Car Engineer Nanodegree Program
 
+# Reflections
+
+The objective of this project is to implement a PID controller in C++ to maneuver the vehicle around lake race track from the Behavioral Cloning Project. The simulator provides the cross track error (CTE) and the velocity (mph) in order to compute the appropriate steering angle. I used 640 x 480 screen resolution and graphic quality of fastest.
+
+The final hyper parameters were chosen by manual tuning (trial and error) to control the steering angle based on the CTE while watching the effect on the behaviour of the car driving around the track.
+
+### The video is available here:-
+
+
+##  The effect of the P, I, D component of the PID algorithm
+
+### P (Proportional component)
+If the P parameter is small, it takes long to reach the desired set point but if it's so large, it tends to overshoot and oscillate. Also if the error is large, the response becomes more aggressive.
+
+### I (Integral component)
+Determines how much we consider the cumulative error over time so we can solve any systematic bias. I used Integral gain 0.01 as it seems there is so little or no drift.
+
+### D (Derivative component)
+
+Determines how much we consider the rate of change in the error. It helps to avoing overshooting and slows down the response. If it's too big it will cause to take long to reach the desired setpoint but if it's too small, there will be overshooting and oscillations.
+
+
+
 ---
 
 ## Dependencies
