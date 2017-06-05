@@ -9,6 +9,7 @@ public:
   double p_error;
   double i_error;
   double d_error;
+  double previous_cte;
 
   /*
   * Coefficients
@@ -41,6 +42,12 @@ public:
   * Calculate the total PID error.
   */
   double TotalError();
+	
+  /*
+  * Calculate the steering.
+  */
+  double compute_steering(double cte);
+
 };
 
 #endif /* PID_H */
