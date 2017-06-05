@@ -7,8 +7,8 @@ The objective of this project is to implement a PID controller in C++ to maneuve
 
 The final hyper parameters were chosen by manual tuning (trial and error) to control the steering angle based on the CTE while watching the effect on the behaviour of the car driving around the track.
 
-### The video is available here:-
-
+#### The video is available here:-
+https://youtu.be/8Z2K8nWqjUo
 
 ##  The effect of the P, I, D component of the PID algorithm
 
